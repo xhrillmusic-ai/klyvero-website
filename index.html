@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KLYVERO — Brand Growth & Digital Marketing</title>
+<meta name="description" content="KLYVERO helps brands and businesses turn attention into measurable growth through digital marketing, creative strategy, and advertising.">
+<style>
+:root{--bg:#08090d;--panel:#101219;--panel2:#151720;--text:#f5f7fb;--muted:#9ca3b2;--line:#252936;--accent:#8b7cff;--accent2:#b8a9ff;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#1c1740 0,transparent 32%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),92%);margin:auto}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.logo{font-weight:800;letter-spacing:-.04em;font-size:22px}.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:28px;color:#c7cad3;font-size:14px}.navlinks a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:12px;border:1px solid var(--line);font-weight:700;font-size:14px;transition:.2s}
+.btn.primary{background:#fff;color:#090a0f;border-color:#fff}.btn.primary:hover{transform:translateY(-2px);box-shadow:0 10px 30px #0005}.btn.ghost:hover{border-color:#555c70}
+.hero{padding:105px 0 90px;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.eyebrow{color:var(--accent2);font-size:13px;text-transform:uppercase;letter-spacing:.16em;font-weight:800}
+h1{font-size:clamp(48px,7vw,82px);line-height:.98;letter-spacing:-.065em;margin:18px 0 25px;max-width:800px}
+.grad{background:linear-gradient(100deg,#fff,#a99cff 65%,#d7d1ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:18px;color:var(--muted);max-width:650px}.actions{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:48px}.stat{padding:18px;border:1px solid var(--line);border-radius:16px;background:#ffffff04}.stat b{display:block;font-size:26px}.stat span{font-size:12px;color:var(--muted)}
+.dashboard{border:1px solid var(--line);background:linear-gradient(145deg,#171922,#0e1016);border-radius:24px;padding:22px;box-shadow:0 30px 100px #0008}
+.dtop{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.dot{width:9px;height:9px;background:#77e3a3;border-radius:50%;display:inline-block;margin-right:7px}.small{font-size:12px;color:var(--muted)}
+.bigmoney{font-size:42px;font-weight:800;letter-spacing:-.04em}.positive{color:#80e3aa;font-size:13px}
+.chart{height:170px;display:flex;align-items:end;gap:8px;padding:18px 0 8px;border-bottom:1px solid var(--line)}
+.bar{flex:1;border-radius:7px 7px 2px 2px;background:linear-gradient(to top,var(--accent),#c2b9ff);opacity:.9;min-height:14px}
+.b1{height:35%}.b2{height:47%}.b3{height:42%}.b4{height:60%}.b5{height:55%}.b6{height:75%}.b7{height:68%}.b8{height:92%}
+section{padding:95px 0}.sectionhead{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:35px}.sectionhead h2{font-size:42px;line-height:1.05;letter-spacing:-.045em;margin:8px 0}.sectionhead p{color:var(--muted);max-width:520px;margin:0}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:27px}.num{font-size:12px;color:var(--accent2);font-weight:800}.card h3{font-size:21px;margin:14px 0 8px}.card p{color:var(--muted);font-size:14px;margin:0}
+.work{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.case{padding:30px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(135deg,#141620,#0e1015)}.tag{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:99px;color:#c8cbd5;font-size:11px}.case h3{font-size:25px;margin:20px 0 7px}.case p{color:var(--muted)}.casegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}.metric{padding:14px;background:#ffffff05;border-radius:12px}.metric b{font-size:20px}.metric span{display:block;color:var(--muted);font-size:11px}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.review{padding:25px;border:1px solid var(--line);border-radius:18px;background:var(--panel)}.stars{letter-spacing:2px;color:#d8d2ff}.review p{font-size:14px;color:#d5d7df}.review strong{font-size:13px}.review small{color:var(--muted)}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}.portrait{min-height:330px;border-radius:24px;border:1px solid var(--line);background:radial-gradient(circle at 50% 35%,#6b5de5,transparent 25%),linear-gradient(145deg,#181a24,#0c0d12);display:grid;place-items:center}.portrait span{font-size:100px;font-weight:900;letter-spacing:-.08em;color:#ffffff12}.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.skill{padding:9px 12px;border:1px solid var(--line);border-radius:10px;color:#c9ccd5;font-size:13px}
+.formbox{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:38px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,#141620,#0c0e13)}form{display:grid;gap:13px}label{font-size:12px;color:#b8bbc6}input,textarea,select{width:100%;margin-top:6px;background:#090a0e;border:1px solid var(--line);border-radius:11px;padding:13px;color:#fff;font:inherit}textarea{min-height:110px;resize:vertical}
+.notice{font-size:11px;color:#777d8b;margin-top:10px}footer{border-top:1px solid var(--line);padding:30px 0;color:#777d8b;font-size:12px;display:flex;justify-content:space-between}
+@media(max-width:850px){.hero,.about,.formbox{grid-template-columns:1fr}.hero{padding-top:70px}.grid3,.reviews,.work{grid-template-columns:1fr}.navlinks{display:none}.stats{grid-template-columns:1fr 1fr 1fr}.sectionhead{display:block}}
+@media(max-width:500px){h1{font-size:48px}.stats{grid-template-columns:1fr}.casegrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="logo" href="#">KLYVERO<span>.</span></a>
+  <div class="navlinks"><a href="#services">Services</a><a href="#results">Results</a><a href="#reviews">Reviews</a><a href="#about">About</a></div>
+  <a class="btn primary" href="#client">Become a client</a>
+</nav>
+
+<header class="hero">
+<div>
+  <div class="eyebrow">Independent brand growth studio</div>
+  <h1>Make your brand <span class="grad">impossible to ignore.</span></h1>
+  <p>KLYVERO helps brands and businesses build attention, improve their digital presence, and turn marketing into measurable business growth.</p>
+  <div class="actions"><a class="btn primary" href="#client">Start a project</a><a class="btn ghost" href="#results">See the work</a></div>
+  <div class="stats"><div class="stat"><b>01</b><span>Direct strategy</span></div><div class="stat"><b>02</b><span>Creative marketing</span></div><div class="stat"><b>03</b><span>Performance focused</span></div></div>
+</div>
+<div class="dashboard">
+  <div class="dtop"><span class="small"><span class="dot"></span>KLYVERO performance dashboard</span><span class="small">Illustrative</span></div>
+  <div class="small">Illustrative campaign revenue</div><div class="bigmoney">$48.2K</div><div class="positive">Sample performance view</div>
+  <div class="chart"><i class="bar b1"></i><i class="bar b2"></i><i class="bar b3"></i><i class="bar b4"></i><i class="bar b5"></i><i class="bar b6"></i><i class="bar b7"></i><i class="bar b8"></i></div>
+  <div class="small" style="margin-top:12px">Sample dashboard — replace with verified client data.</div>
+</div>
+</header>
+
+<section id="services">
+<div class="sectionhead"><div><div class="eyebrow">What I do</div><h2>A complete growth partner for modern brands.</h2></div><p>From strategy to creative execution, I build campaigns designed to get attention and give businesses a clearer path from audience to customer.</p></div>
+<div class="grid3">
+<div class="card"><span class="num">01 / STRATEGY</span><h3>Brand positioning</h3><p>Clarify what your business offers, who it is for, and how it should show up online.</p></div>
+<div class="card"><span class="num">02 / CREATIVE</span><h3>Content & ads</h3><p>Develop scroll-stopping creative concepts, ad messaging, promotional content, and campaign direction.</p></div>
+<div class="card"><span class="num">03 / PERFORMANCE</span><h3>Growth campaigns</h3><p>Track campaign performance, identify opportunities, and improve the marketing system over time.</p></div>
+</div>
+</section>
+
+<section id="results">
+<div class="sectionhead"><div><div class="eyebrow">Results</div><h2>Show the numbers. Earn trust.</h2></div><p>Use this section for verified client outcomes. The examples below are placeholders until you add your real campaign data.</p></div>
+<div class="work">
+<div class="case"><span class="tag">CASE STUDY / PLACEHOLDER</span><h3>Local business growth</h3><p>Example layout for showing a campaign, the challenge, what Daniel changed, and the verified outcome.</p><div class="casegrid"><div class="metric"><b>$12K</b><span>Revenue attributed</span></div><div class="metric"><b>3.4×</b><span>ROAS</span></div><div class="metric"><b>+41%</b><span>Conversion rate</span></div></div></div>
+<div class="case"><span class="tag">CASE STUDY / PLACEHOLDER</span><h3>Brand awareness campaign</h3><p>Example layout for showing reach, engagement, acquisition cost, and other measurable campaign indicators.</p><div class="casegrid"><div class="metric"><b>180K</b><span>Impressions</span></div><div class="metric"><b>6.8%</b><span>Engagement</span></div><div class="metric"><b>$2.10</b><span>Cost per lead</span></div></div></div>
+</div>
+</section>
+
+<section id="reviews">
+<div class="sectionhead"><div><div class="eyebrow">Client reviews</div><h2>Let your clients speak.</h2></div><p>Add real reviews from real clients here. Do not publish testimonials without permission.</p></div>
+<div class="reviews">
+<div class="review"><div class="stars">★★★★★</div><p>“Add a genuine client testimonial here describing the experience and measurable outcome.”</p><strong>Client Name</strong><br><small>Business / Industry</small></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Add a second verified testimonial here. Keep it specific and focused on the work delivered.”</p><strong>Client Name</strong><br><small>Business / Industry</small></div>
+<div class="review"><div class="stars">★★★★★</div><p>“Add a third verified testimonial here once you have permission to publish it.”</p><strong>Client Name</strong><br><small>Business / Industry</small></div>
+</div>
+</section>
+
+<section id="about">
+<div class="portrait"><span>K</span></div>
+<div><div class="eyebrow">About KLYVERO</div><h2 style="font-size:42px;letter-spacing:-.045em;line-height:1.05">A creative marketer focused on turning attention into action.</h2><p style="color:var(--muted)">KLYVERO is an independent marketing studio working with brands and businesses that want to improve how they present themselves, reach customers, and grow online.</p><p style="color:var(--muted)">Our approach combines creative thinking, digital marketing, content strategy, advertising, audience research, and performance tracking. Every project starts with understanding the business and ends with clear deliverables and measurable goals.</p>
+<div class="skills"><span class="skill">Digital marketing</span><span class="skill">Ad creative</span><span class="skill">Content strategy</span><span class="skill">Branding</span><span class="skill">Social media</span><span class="skill">Campaign analytics</span><span class="skill">Creative direction</span><span class="skill">Audience research</span></div></div>
+</section>
+
+<section id="client">
+<div class="formbox">
+<div><div class="eyebrow">Work with me</div><h2 style="font-size:44px;line-height:1.05;letter-spacing:-.05em;margin:10px 0 15px">Ready to put your brand in front of more people?</h2><p style="color:var(--muted)">Tell me about your business and what you want to accomplish. I’ll use the information to understand the project and follow up with next steps.</p></div>
+<form onsubmit="event.preventDefault(); document.getElementById('success').textContent='Thanks — your inquiry has been captured in this demo. Connect this form to your email/CRM before launching.';">
+<label>Your name<input required name="name" placeholder="Your name"></label>
+<label>Business / brand<input required name="business" placeholder="Business name"></label>
+<label>Email<input required type="email" name="email" placeholder="you@business.com"></label>
+<label>What do you need?<select name="service"><option>Advertising</option><option>Social media marketing</option><option>Brand strategy</option><option>Content / creative</option><option>Full marketing support</option></select></label>
+<label>Tell me about the project<textarea name="message" placeholder="Goals, budget, timeline, website, social accounts, etc."></textarea></label>
+<button class="btn primary" type="submit">Submit inquiry</button>
+<div id="success" class="notice"></div>
+<div class="notice">Demo form: submissions are not sent anywhere until a backend, email service, or CRM is connected.</div>
+</form>
+</div>
+</section>
+
+<footer><span>© 2026 KLYVERO. All rights reserved.</span><span>Brand Growth • Creative • Performance</span></footer>
+</div>
+</body>
+</html>
